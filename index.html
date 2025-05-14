@@ -7,20 +7,15 @@
   <link rel="icon" type="image/png" href="https://i.imgur.com/WGvnYCS.png">
   <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
   <style>
-    * {
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; scroll-behavior: smooth; }
     body {
       font-family: 'Patrick Hand', cursive;
       margin: 0;
       padding: 0;
-      background: #fefae0;
+      background: #fefae0 url('https://www.transparenttextures.com/patterns/sketchy.png');
       color: #333;
       line-height: 1.6;
-      background-image: url('https://www.transparenttextures.com/patterns/sketchy.png');
     }
 
     header {
@@ -31,11 +26,13 @@
       position: relative;
       border-bottom: 5px dashed #90be6d;
     }
+
     header h1 {
       font-size: 3rem;
       margin: 0;
       font-weight: 700;
     }
+
     header h2 {
       font-size: 1.5rem;
       font-weight: 400;
@@ -65,36 +62,21 @@
       color: #2b2d42;
     }
 
-    ul {
-      padding-left: 20px;
-    }
-
-    p {
-      margin: 5px 0;
-      font-size: 1.1rem;
-    }
+    ul { padding-left: 20px; }
+    p { margin: 5px 0; font-size: 1.1rem; }
 
     .job-title {
       font-weight: bold;
       font-size: 1.2rem;
       margin-top: 20px;
     }
-    .job-period {
-      color: #555;
-      font-style: italic;
-    }
 
-    .skills ul li strong {
-      display: inline-block;
-      margin-bottom: 4px;
-      font-weight: bold;
-    }
+    .job-period { color: #555; font-style: italic; }
+
+    .skills ul li strong { display: inline-block; margin-bottom: 4px; }
 
     @keyframes popUp {
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
+      to { opacity: 1; transform: scale(1); }
     }
 
     @keyframes bounce {
@@ -102,7 +84,8 @@
       50% { transform: translateY(-10px); }
     }
 
-    .whatsapp-float, .linkedin-float {
+    .whatsapp-float,
+    .linkedin-float {
       position: fixed;
       width: 60px;
       height: 60px;
@@ -118,22 +101,14 @@
       transition: transform 0.3s ease;
     }
 
-    .linkedin-float {
-      bottom: 100px;
-      background-color: #0077b5;
-    }
+    .linkedin-float { bottom: 100px; background-color: #0077b5; }
+    .whatsapp-float { background-color: #25d366; }
 
-    .whatsapp-float {
-      background-color: #25d366;
-    }
+    .whatsapp-float:hover,
+    .linkedin-float:hover { transform: scale(1.1); }
 
-    .whatsapp-float:hover, .linkedin-float:hover {
-      transform: scale(1.1);
-    }
-
-    .whatsapp-float i, .linkedin-float i {
-      margin-top: 16px;
-    }
+    .whatsapp-float i,
+    .linkedin-float i { margin-top: 16px; }
 
     .popup {
       position: fixed;
@@ -157,12 +132,8 @@
     }
 
     @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      header h2 {
-        font-size: 1rem;
-      }
+      header h1 { font-size: 2rem; }
+      header h2 { font-size: 1rem; }
     }
   </style>
 </head>
@@ -193,6 +164,7 @@
       <li>Mengembangkan format pelaporan efisiensi bahan bakar yang digunakan sebagai standar departemen.</li>
       <li>Berperan penting dalam audit internal armada, memastikan dokumentasi kendaraan selalu up-to-date.</li>
     </ul>
+
     <p class="job-title">PT TaniHub Group <span class="job-period">(2019–2022)</span><br><em>Supply Chain Administration</em></p>
     <ul>
       <li>Berhasil menyusun ulang proses rekapitulasi stok harian yang mempercepat pelaporan sebanyak 40%.</li>
@@ -200,6 +172,7 @@
       <li>Bekerja sama dengan tim warehouse dan ekspedisi dalam optimalisasi rute pengiriman.</li>
       <li>Menjadi perantara koordinasi antara gudang pusat dan vendor regional.</li>
     </ul>
+
     <p class="job-title">PT Sumber Alfaria Trijaya Tbk <span class="job-period">(2018–2019)</span><br><em>Inventory Control</em></p>
     <ul>
       <li>Melakukan pengawasan dan pencatatan keluar masuk barang secara akurat menggunakan sistem WMS.</li>
@@ -231,7 +204,8 @@
   </section>
 
   <div class="popup" id="popupMessage">
-    Tertarik bekerja dengan saya? <br><a href="https://wa.me/6289502702764" style="color:#25d366; font-weight:bold; text-decoration:none;">Hubungi lewat WhatsApp</a>
+    Tertarik bekerja dengan saya? <br>
+    <a href="https://wa.me/6289502702764" style="color:#25d366; font-weight:bold; text-decoration:none;">Hubungi lewat WhatsApp</a>
   </div>
 
   <a href="https://wa.me/6289502702764" class="whatsapp-float" target="_blank">
